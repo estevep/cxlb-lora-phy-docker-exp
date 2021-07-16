@@ -4,9 +4,10 @@ WORKDIR /root
 
 # lora_phy_cxlb.git
 RUN git clone --branch WIP-set_n https://github.com/AmauryPARIS/LoRa_PHY_Cxlb.git LoRa_PHY_Cxlb.git ;
-RUN cd /root/LoRa_PHY_Cxlb.git/gr-lora_sdr; git pull 
+#RUN cd /root/LoRa_PHY_Cxlb.git/gr-lora_sdr; git pull 
+RUN cd /root/LoRa_PHY_Cxlb.git/; git pull 
+
 RUN cd /root/ ; mkdir res
-#RUN cd /root/LoRa_PHY_Cxlb.git/; git pull 
 
 
 # build module
